@@ -1,0 +1,17 @@
+name: Build
+
+on:
+  - pull_request
+
+jobs:
+  Test:
+    runs-on: ubuntu-20.04
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-tags: true
+          fetch-depth: 0
+      - name: Image
+        env:
+          VERSION: v3.14.0
+        run: make test
