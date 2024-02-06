@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/shell
 
 server=$1
 username=$2
