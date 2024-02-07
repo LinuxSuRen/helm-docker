@@ -1,5 +1,5 @@
 #!/bin/shell
-set -x
+set -e
 
 server=$1
 username=$2
